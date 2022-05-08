@@ -1,6 +1,8 @@
 import Navbar from './Topo';
 import Stories from './Stories';
 import Posts from './Posts';
+import SideBar from './SideBar';
+
 
 export default function App(){
     return (
@@ -10,8 +12,8 @@ export default function App(){
                 <div class="esquerda">
                     <Stories />
                     <Posts />
-                </div>
-                    <SideBar />   
+                </div> 
+                <SideBar />
             </div>
 
         </div>
