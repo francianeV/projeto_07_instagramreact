@@ -13,7 +13,12 @@ export default function Posts(){
 
 function Post(props){
 
-    const [like, setLike] = React.useState(<ion-icon name="heart-outline" onClick={() => setLike(<ion-icon name="heart" color="danger"></ion-icon>)}></ion-icon>);
+    const [like, setLike] = React.useState(false);
+    let color = "black";
+
+    if(like === true){
+        color = "danger";
+    }
     
 
     return(
@@ -29,13 +34,13 @@ function Post(props){
         </div>
 
         <div class="conteudo">
-          <img src={props.post} onClick={() => setLike(<ion-icon name="heart" color="danger"></ion-icon>)}/>
+          <img src={props.post} onClick={() => setLike(!like)}/>
         </div>
 
         <div class="fundo">
           <div class="acoes">
             <div>
-              {like}
+              <ion-icon name={`${like === true ? 'heart' : 'heart-outline'}`} onClick={() => setLike(!like)} color={color}></ion-icon>
               <Icones name="chatbubble-outline" />
               <Icones name="paper-plane-outline" />
             </div>
