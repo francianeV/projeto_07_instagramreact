@@ -1,5 +1,6 @@
 import Navbar from './Topo';
 import Stories from './Stories';
+import Posts from './Posts';
 
 export default function App(){
     return (
@@ -8,7 +9,9 @@ export default function App(){
             <div class="corpo">
                 <div class="esquerda">
                     <Stories />
-                </div>   
+                    <Posts />
+                </div>
+                    <SideBar />   
             </div>
 
         </div>

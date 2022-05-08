@@ -1,3 +1,5 @@
+import Icones from "./Icon";
+
 export default function Navbar(){
     return(
         <div class="navbar">
@@ -18,13 +20,6 @@ function ContainerTop(){
     );
 
 }
-
-function Icones(props){
-    return(
-        <ion-icon name={props.name}></ion-icon>
-    );
-}
-
 
 function Logos(){
     return (

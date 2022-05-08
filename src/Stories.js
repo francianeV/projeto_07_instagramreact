@@ -7,7 +7,14 @@ export default function Stories(){
     return(
         <div class="stories">
         
-            {storie.map((stories) =>  (<div class="story"><div class="imagem"><img src={stories.img} /></div><div class="usuario">{stories.title}</div></div>))}
+            {storie.map((stories) =>  (<div class="story">
+                                            <div class="imagem">
+                                                <img src={stories.img} />
+                                            </div>
+                                            <div class="usuario">
+                                                {stories.title}
+                                            </div>
+                                        </div>))}
 
             <div class="setinha">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
