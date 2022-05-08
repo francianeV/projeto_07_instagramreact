@@ -2,6 +2,7 @@ import Navbar from './Topo';
 import Stories from './Stories';
 import Posts from './Posts';
 import SideBar from './SideBar';
+import MenuMobile from './Mobile';
 
 
 export default function App(){
@@ -15,7 +16,8 @@ export default function App(){
                 </div> 
                 <SideBar />
             </div>
-
+            <MenuMobile />
         </div>
     );
 }
+

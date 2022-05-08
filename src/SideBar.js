@@ -3,7 +3,7 @@ export default function SideBar(){
         <div class="sidebar">
             <Usuario />
             <Sujestoes />
-
+            <InfosRodape />
         </div>
     );
 }
@@ -32,7 +32,7 @@ function Sujestoes(){
               Sugestões para você
               <div>Ver tudo</div>
             </div>
-            {sujestao.map((sujestao) =>  (<Sujestao user={sujestao.user} name={sujestao.name} post={sujestao.post} />))}
+            {sujestao.map((sujestao) =>  (<Sujestao user={sujestao.user} name={sujestao.name} razao={sujestao.razao} />))}
 
         </div>
     );
@@ -53,4 +53,19 @@ function Sujestao(props){
               <div class="seguir">Seguir</div>
         </div>
     );
+}
+
+function InfosRodape(){
+    return(
+        <div>
+            <div class="links">
+            Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
+          </div>
+
+          <div class="copyright">
+            © 2021 INSTAGRAM DO FACEBOOK
+          </div>
+        </div>
+    );
+
 }
