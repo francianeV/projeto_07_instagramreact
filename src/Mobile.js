@@ -1,4 +1,3 @@
-import Icones from "./Icon";
 
 export default function MenuMobile(){
     return(

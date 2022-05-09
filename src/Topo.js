@@ -27,7 +27,7 @@ function Logos(){
             <div class="logo">
                 <Icones name="logo-instagram" />
                 <div class="separador"></div>
-                <img src="img/logo.png" />
+                <img src="img/logo.png" alt="logo instagram"/>
             </div>
 
             <div class="logo-mobile">
@@ -35,7 +35,7 @@ function Logos(){
             </div>
 
             <div class="instagram-mobile">
-                <img src="img/logo.png" />
+                <img src="img/logo.png" alt="logo instagram mobile"/>
             </div>
         </div>
     )

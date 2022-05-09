@@ -11,7 +11,7 @@ export default function SideBar(){
 function Usuario(){
     return(
         <div class="usuario">
-            <img src="img/catanacomics.svg" />
+            <img src="img/catanacomics.svg" alt="catanacomics"/>
             <div class="texto">
               <strong>catanacomics</strong>
               Catana
@@ -43,7 +43,7 @@ function Sujestao(props){
     return(
         <div class="sugestao">
               <div class="usuario">
-                <img src={props.user} />
+                <img src={props.user} alt={props.name}/>
                 <div class="texto">
                   <div class="nome">{props.name}</div>
                   <div class="razao">{props.razao}</div>

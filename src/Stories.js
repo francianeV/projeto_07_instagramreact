@@ -9,7 +9,7 @@ export default function Stories(){
         
             {storie.map((stories) =>  (<div class="story">
                                             <div class="imagem">
-                                                <img src={stories.img} />
+                                                <img src={stories.img} alt={stories.title} />
                                             </div>
                                             <div class="usuario">
                                                 {stories.title}

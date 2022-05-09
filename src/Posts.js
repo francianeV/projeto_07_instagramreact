@@ -14,7 +14,8 @@ export default function Posts(){
 function Post(props){
 
     const [like, setLike] = React.useState(false);
-    let color = "black";
+
+    let color="";
 
     if(like === true){
         color = "danger";
@@ -25,7 +26,7 @@ function Post(props){
         <div class="post">
         <div class="topo">
           <div class="usuario">
-            <img src={props.user} />
+            <img src={props.user} alt={props.name}/>
             {props.name}
           </div>
           <div class="acoes">
@@ -34,7 +35,7 @@ function Post(props){
         </div>
 
         <div class="conteudo">
-          <img src={props.post} onClick={() => setLike(!like)}/>
+          <img src={props.post} alt={props.name} onClick={() => setLike(!like)}/>
         </div>
 
         <div class="fundo">
@@ -50,7 +51,7 @@ function Post(props){
           </div>
 
           <div class="curtidas">
-            <img src="img/adorable_animals.svg" />
+            <img src="img/adorable_animals.svg" alt="adorable_animals" />
             <div class="texto">
               Curtido por <strong>adorable_animals</strong> e <strong>outras 99.159 pessoas</strong>
             </div>
